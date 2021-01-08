@@ -4,13 +4,14 @@
   "version": "0.1",
   "permissions": [
     "tabs",
+    "https://https://web.whatsapp.com/*",
     "declarativeContent",
     "storage"
   ],
   "icons": {
-    "16": "./src/assets/icons/Icon16.png",
-    "48": "./src/assets/icons/Icon48.png",
-    "128": "./src/assets/icons/Icon128.png"
+    "16": "./src/assets/icons/icon16.png",
+    "48": "./src/assets/icons/icon48.png",
+    "128": "./src/assets/icons/icon128.png"
   },
   "content_scripts": [
     {

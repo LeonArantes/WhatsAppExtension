@@ -7,10 +7,11 @@
 ._3M2yQ,
 ._3es8f,
 ._3Tw1q,
-._19038._3cwQ7._1VzZY,
 .fqPQb,
 ._2aNms,
-._3ZYWe._27rts {
+._3ZYWe._27rts
+._1VzZY,
+.CWVX1 {
   filter: blur(3px) !important;
 }
 
@@ -33,12 +34,12 @@
 ._3es8f:hover,
 ._3Pwfx:hover ._3es8f,
 ._1MZWu:hover ._3Tw1q ,
-._1ij5F._2tbXF._1zinb:hover ._19038._3cwQ7._1VzZY
-.NSNJN.m9la1 ._19038._3cwQ7._1VzZY,
+._1VzZY:hover ._1VzZY,
 ._1MZWu:hover .fqPQb,
 ._1UuMR:hover ._2aNms
 ._1UuMR:hover ._1l12d,
 ._2aNms:hover,
-._3ZYWe._27rts {
+._3ZYWe._27rts,
+.CWVX1:hover {
   filter: blur(0) !important;
 }

@@ -9,6 +9,10 @@
   padding: 0 !important;
 }
 
+/* span[data-icon="default-user"]{
+  display: none !important;
+} */
+
 :root {
   --beige: #e5ddd5;
   --beige-rgb: 229,221,213;

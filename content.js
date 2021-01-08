@@ -2,17 +2,19 @@ console.log("Extensão rodando com sucesso")
 
 window.addEventListener('load', () => {
   getDocumentBody();
-  getImageInital()
+  getInitialImageWelcome();
 });
 
 
+
+
 const getDocumentBody = () => {
-  const getBody = setInterval(() => {
+  const intervalGetBody = setInterval(() => {
     const body = document.querySelector('body');
     if (body != null) {
+      clearInterval(intervalGetBody)
       body.classList.add('dark');
       console.log("Thema dark setado com sucesso!")
-      clearInterval(getBody)
     }
   }, 1000)
 }
@@ -28,17 +30,34 @@ const audioAceleration = () => {
   }, 1000)
 }
 
-const getImageInital = () => {
-  var getImage = setInterval(() => {
-    const teste = document.querySelector('._3tBOo')
+const getInitialImageWelcome = () => {
+  var intervalGetInitialMessageImage = setInterval(() => {
+    const wrapperCircleImage = document.querySelector('._1eQ6b')
+    const titleMessageWelcome = document.querySelector('h1._3BDr5')
+    const descMessageWelcome = document.querySelector('div._2cf_o')
 
-    if (teste != null) {
-      clearInterval(getImage);
-      // teste.innerHTML = '<img src="./src/assets/icons/Icon128.png">'
-      console.log(teste)
+    if (wrapperCircleImage != null && titleMessageWelcome != null && descMessageWelcome != null) {
+      clearInterval(intervalGetInitialMessageImage);
+      wrapperCircleImage.innerHTML = `<img src="https://i.ibb.co/6Ny2bZ6/logomaker-Whats.png">`
+      wrapperCircleImage.style.borderRadius = '60px';
+      titleMessageWelcome.innerHTML = 'Privacy WhatsApp'
+      descMessageWelcome.innerHTML = 'O WhatsApp conecta ao seu telefone para sincronizar suas mensagens. Para reduzir o uso de dados, conecte seu telefone a uma rede Wi-Fi.'
+
+      const logomakerExtensionAdded = document.querySelector('._1eQ6b > img')
+      var intervalGetCircleImage = setInterval(() => {
+        if (logomakerExtensionAdded != null) {
+          clearInterval(intervalGetCircleImage);
+          logomakerExtensionAdded.style.width = "100%"
+          logomakerExtensionAdded.style.height = "100%"
+        }
+      }, 1000)
+
     }
   }, 1000)
 }
+
+
+
 
 
 
