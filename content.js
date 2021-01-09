@@ -3,7 +3,31 @@ console.log("Extensão rodando com sucesso")
 window.addEventListener('load', () => {
   getDocumentBody();
   getInitialImageWelcome();
+  click()
 });
+
+
+
+
+
+
+
+
+const click = () => {
+  document.addEventListener('click', e => {
+    console.log('Você Clicou em alguma coisa')
+    console.log(e)
+  })
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -55,6 +79,8 @@ const getInitialImageWelcome = () => {
     }
   }, 1000)
 }
+
+
 
 
 

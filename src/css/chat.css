@@ -1,0 +1,32 @@
+/* 
+  ._1VzZY > span -> Texto Mensagem
+  ._1kqM- > img -> Imagem Mensagem
+  .CWVX1 > span -> Texto Mensagem Usuário Nome Resposta 
+  .zLEDC > span -> Texto Mensagem Resposta
+  ._1l12d > img -> Imagem Usuário Mensagem 
+  ._1kqM- > div- -> Imagem Mensagem Resposta
+*/
+
+
+._1VzZY > span,
+.CWVX1 > span,
+.zLEDC > span,
+._1l12d > img {
+  filter: blur(4px) !important;
+  filter: blur(4px) !important
+}
+
+._1kqM- > img,
+._1kqM- > div {
+  filter: blur(100px) !important;
+}
+
+
+._1VzZY:hover > span, 
+._1kqM-:hover > img,
+.CWVX1:hover > span,
+.zLEDC:hover > span,
+._1l12d:hover > img,
+._1kqM-:hover  > div{
+  filter: blur(0) !important;
+} 
